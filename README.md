@@ -13,16 +13,24 @@ Description:
   Steps to run the script:
 
   1) In Ryu VM, you have to run big_data_switch_13.py 
+  
    sudo ryu-manager --verbose big_data_switch_13.py
-      > The statics report will be stored in filename BigDataFlowStats.log. It will be stored on ryu manager working directory or you can search that filename by using "find" command. If you want to store some other location then modify the source code and specify it.
+   
+      The statics report will be stored in filename BigDataFlowStats.log. It will be stored on ryu manager working directory or you can search that filename by using "find" command. If you want to store some other location then modify the source code and specify it.
       
 
   2) In Mininet VM, you have to run BigDataTopo1.py
+  
        a) Open a Terminal and run script 
+       
              $sudo ./BigDataTopo1.py 
+             
        b) To open another Terminal and type the following commands
+       
              $sudo ovs-vsctl set Bridge s1 protocols=OpenFlow13 
+             
             * This command is used to set Openflow protocol version for switch s1. In this terminal you can check what are the flow entries configured on switch s1 by
+            
             $sudo ovs-ofctl -O openflow13 dump-flows s1
 
 
