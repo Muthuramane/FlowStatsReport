@@ -6,8 +6,11 @@ Description:
   I used two virtual machines to run these scripts. First VM for Mininet and second VM for Ryu which will help us to understand more about transmission in between switch and controller.
 
   Two python script files,
+  
   1) BigDataTopo1.py - This file should be run on Mininet VM
+  
   2) big_data_switch_13.py - This file should be run on Ryu controller VM.
+  
 
 
   Steps to run the script:
